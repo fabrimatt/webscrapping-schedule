@@ -20,7 +20,7 @@ jobs:
       
       - name: executar arquivo de scrapping
         env:
-          SENDGRID_API_KEY: $ {{ secrets.SENDGRID_API_KEY }}
+          SENDGRID_API_KEY: ${{ secrets.SENDGRID_API_KEY }}
         run: python ws.py
 
   
