@@ -16,7 +16,7 @@ jobs:
         uses: actions/setup-python@v4
 
       - name: instalar os pacotes do requirements.txt
-        run: python -m pip install pip install -r requirements.txt
+        uses: luisgs7/pip-packages@v1
 
       - name: executar arquivo de scrapping
         env:
